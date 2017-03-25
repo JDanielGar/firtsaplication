@@ -1,0 +1,16 @@
+
+# Created by https://www.gitignore.io/api/apachecordova
+
+### ApacheCordova ###
+# Apache Cordova generated files and directories
+bin/*
+!/plugins
+!/plugins/android.json
+!/plugins/fetch.json
+plugins/*
+platforms/*
+
+node_modules
+www/libs
+
+# End of https://www.gitignore.io/api/apachecordova

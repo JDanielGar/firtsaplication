@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" href="libs/onsenui/css/onsenui.css" />
+    <link rel="stylesheet" href="css/custom-onsen-css-components.css" />
+    <script src="libs/onsenui/js/onsenui.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="scripts/home.js"></script>
+
+
+    <title>App</title>
+</head>
+
+<body>
+    <ons-page>
+        <ons-toolbar>
+            <div class="left">
+                <ons-toolbar-button>
+                    <ons-icon icon="ion-navicon-round"></ons-icon>
+                </ons-toolbar-button>
+            </div>
+            <div class="center">Primera Aplicacion</div>
+            <div class="right">
+                <ons-toolbar-button>
+                    <ons-icon icon="ion-chatbubbles"></ons-icon>
+                </ons-toolbar-button>
+            </div>
+        </ons-toolbar>
+        <ons-list>
+            <ons-list-header>Settings</ons-list-header>
+            <ons-list-item>
+                <div class="center">
+                    Enable cool feature
+                </div>
+                <div class="right">
+                    <ons-switch checked></ons-switch>
+                </div>
+            </ons-list-item>
+            <ons-list-item>
+                <div class="center">
+                    Enable even cooler feature
+                </div>
+                <div class="right">
+                    <ons-switch></ons-switch>
+                </div>
+            </ons-list-item>
+            <ons-list-item>
+                <div class="center">
+                    Enable amazing feature
+                </div>
+                <div class="right">
+                    <ons-switch disabled></ons-switch>
+                </div>
+            </ons-list-item>
+        </ons-list>
+        <p style="text-align: center">
+            <ons-button onclick="showPopover(this)">Tú información</ons-button>
+        </p>
+        <ons-popover direction="up" id="popover">
+            <div style="text-align: center">
+                <p>
+                    <div style="text-align: center; margin-top: 30px;">
+                        <p>
+                            <ons-input id="username" modifier="underbar" placeholder="Username" float></ons-input>
+                        </p>
+                        <p>
+                            <ons-input id="password" modifier="underbar" type="password" placeholder="Password" float></ons-input>
+                        </p>
+                    </div>
+                </p>
+            </div>
+        </ons-popover>
+    </ons-page>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
